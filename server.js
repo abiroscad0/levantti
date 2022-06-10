@@ -1,13 +1,13 @@
-
-
 const express = require('express');
-
+const path = require('path');
 const app = express();
 
-app.use(express.static('./dist/levantti-cred'));
+const appName = 'levantti-cred';
 
-app.get('/*', (req, res) =>
-    res.sendFile('index.html', { root: 'dist/levantti-cred/' }),
-);
+app.use(express.static(__dirname + `./dist/${appName}`));
+
+app.get('/*', function (req, res) {
+    res.sendFile(path.join(__dirname + `dist/${appName}/index.html`))
+});
 
 app.listen(process.env.PORT || 8080);
