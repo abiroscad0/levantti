@@ -1,0 +1,53 @@
+<div class="content">
+  <div class="content-one">
+    <div class="container" fxFlex>
+        <mat-toolbar fxLayout="row wrap" fxLayoutAlign="space-between center">
+            <img src="./assets/img/logo/logo.png">
+            
+            <div fxFlex.gt-md="25%" fxHide.xs>
+              <button mat-raised-button class="active">Sobre</button>
+              <button mat-raised-button>Simulador</button>
+              <button mat-raised-button>Serviços</button>
+              <button mat-raised-button>Contato</button>
+            </div>
+        </mat-toolbar>
+        <p class="text-primary">USE O LIMITE DO SEU CARTÃO DE CRÉDITO E RECEBA O DINHEIRO NA HORA!</p>
+    </div>
+  </div>
+  <div class="content-two">
+    <h1>Benefícios</h1>
+    <div fxLayout="row wrap" fxLayoutAlign="space-around center">
+      <div fxFlex.gt-md="33" fxFlex.gt-xs="100" fxFlex="100" *ngFor="let card of primaryCards">
+        <mat-card>
+          <mat-card-content>
+            <img src="{{ card.icon }}">
+            <b class="titleCard">
+              <h2>
+                {{ card.title }}
+              </h2>
+            </b>
+            <p class="descriptionCard">
+              {{ card.description }}
+            </p>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+  <div class="content-tree">
+    <div fxLayout="column wrap" fxLayoutAlign="space-around center">
+      <div fxLayout="row wrap" style="color: white; font-size: 38px;">
+        <p>Quanto você precisa?</p>
+      </div>
+      <div fxLayout="row wrap" class="buttons">
+        <button mat-raised-button>R$ 1000,00</button>
+        <button mat-raised-button>R$ 2000,00</button>
+        <button mat-raised-button>R$ 5000,00</button><br>
+        <button mat-raised-button>R$ 10.000,00</button>
+        <button mat-raised-button>R$ 15.000,00</button>
+        <button mat-raised-button>Outro valor</button>
+      </div>
+      <span class="spacer"></span>
+      <img src="./assets/img/bg/bg_md_1.png" style="width: 300px;">
+    </div>
+  </div>
+</div>

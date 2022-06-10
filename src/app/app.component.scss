@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap');
+
+.container {
+    padding: 0 10%;
+    height: 100%;
+
+    background: url('../assets/img/bg/bg_sup_1.jpg') rgba(0, 0, 0, 0.4);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: border-box;
+    background-blend-mode: darken;
+
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+mat-toolbar {
+    background-color: transparent;
+
+    div {
+        button {
+            color: white;
+            background-color: transparent;
+            box-shadow: none;
+        }
+    }
+
+    img {
+        height: 60px;
+    }
+}
+
+h1 {
+    text-align: center;
+    font-weight: 200;
+    font-size: 45px;
+}
+
+.text-primary {
+    margin: 0 auto;
+    font-size: 2em;
+    width: 18em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    line-height: 40px;
+    padding: 10% 0;
+}
+
+.active {
+    border-bottom: 2px solid white;
+    border-radius: 0px;
+}
+
+mat-card-content {
+    padding: 20px 10px !important;
+    max-height: 201px;
+}
+
+.descriptionCard {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    width: 12em;
+
+}
+
+.titleCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 400;
+    width: 12em;
+}
+
+.content-two {
+    font-family: 'Montserrat',
+        sans-serif;
+
+    margin: 50px 30px;
+    padding: 0 25%;
+
+    mat-card {
+        img {
+            opacity: 70%;
+            width: 45px;
+        }
+
+        color: rgb(109, 109, 109);
+
+        margin: 5px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        max-height: 283px;
+        min-width: 150px;
+    }
+}
+
+.content-tree {
+    background-image: linear-gradient(#F97319, #FFD21A);
+    width: 100%;
+    margin: 50px 0px;
+    padding: 0 5%;
+    height: 500px;
+
+    div.buttons {
+        width: 500px;
+        align-items: center;
+        justify-content: center;
+
+        button {
+            width: 150px;
+            margin: 5px;
+            text-align: center;
+        }
+    }
+}
